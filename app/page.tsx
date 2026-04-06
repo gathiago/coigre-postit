@@ -137,7 +137,7 @@ export default function HomePage() {
         <div
           ref={exportRef}
           className="flex flex-col items-center gap-5 p-12"
-          style={{ backgroundColor: '#FFFFFD' }}
+          style={{ backgroundColor: 'transparent' }}
         >
           {notes.map((note, i) => (
             <PostItPreview key={note.id} postit={note} index={i} />

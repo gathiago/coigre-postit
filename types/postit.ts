@@ -59,8 +59,8 @@ export const TEMPLATES: Template[] = [
     id: 'amor-2',
     category: 'Amor',
     emoji: '💌',
-    label: 'Saudade',
-    texto: 'Tô com saudade de você...\nVolta logo! 💕',
+    label: 'Pega na minha mão',
+    texto: 'Pega na minha mão e vamos.\nJuntos a gente vai mais longe. 💕',
   },
   {
     id: 'fofo-1',
@@ -117,5 +117,12 @@ export const TEMPLATES: Template[] = [
     emoji: '⚡',
     label: 'Força',
     texto: 'Você já passou por\ncoisas piores e venceu.\nVai vencer de novo! 💪',
+  },
+  {
+    id: 'motivacao-3',
+    category: 'Motivação',
+    emoji: '⚡',
+    label: 'Acredita',
+    texto: 'Acredita em você!\nO melhor ainda está\npor vir. ✨',
   },
 ];

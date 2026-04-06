@@ -2,7 +2,7 @@ export async function exportToPng(element: HTMLElement): Promise<string> {
   const { toPng } = await import('html-to-image');
   return toPng(element, {
     pixelRatio: 2.5,
-    backgroundColor: '#FFFFFD',
+    backgroundColor: null as unknown as string,
     cacheBust: true,
   });
 }
