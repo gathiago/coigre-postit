@@ -26,15 +26,19 @@ export default function PostItPreview({ postit, index }: Props) {
       {/* Card */}
       <div
         className="w-[320px] min-h-[200px] rounded-sm shadow-postit
-                   p-5 pt-7 whitespace-pre-wrap break-words leading-7 text-black/70"
+                   px-5 whitespace-pre-wrap break-words text-black/70"
         style={{
           backgroundColor: color.bg,
           fontFamily: font.family,
           fontSize: `${postit.tamanho}px`,
+          lineHeight: '28px',
+          paddingTop: '10px',
+          paddingBottom: '14px',
           backgroundImage: `repeating-linear-gradient(
-            transparent, transparent 23px,
-            rgba(105,31,49,0.06) 23px, rgba(105,31,49,0.06) 24px
+            transparent, transparent 27px,
+            rgba(105,31,49,0.08) 27px, rgba(105,31,49,0.08) 28px
           )`,
+          backgroundPositionY: '6px',
         }}
       >
         {postit.texto}

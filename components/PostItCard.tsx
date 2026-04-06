@@ -53,10 +53,12 @@ export default function PostItCard({ postit, index, total, onUpdate, onRemove }:
           onChange={(e) => onUpdate(index, { texto: e.target.value })}
           placeholder="Escreva sua mensagem aqui..."
           className="w-full min-h-[145px] bg-transparent border-none outline-none
-                     resize-none leading-7 text-black/70 placeholder:text-black/25"
+                     resize-none text-black/70 placeholder:text-black/25"
           style={{
             fontFamily: font.family,
             fontSize: `${postit.tamanho}px`,
+            lineHeight: '28px',
+            paddingTop: '4px',
           }}
         />
 

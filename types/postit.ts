@@ -37,10 +37,10 @@ export const COLOR_MAP: Record<PostItColor, ColorInfo> = {
 };
 
 export const FONT_MAP: Record<PostItFont, { label: string; family: string }> = {
-  caveat:  { label: 'Caveat',       family: "'Caveat', cursive" },
-  kalam:   { label: 'Kalam',        family: "'Kalam', cursive" },
-  patrick: { label: 'Patrick Hand', family: "'Patrick Hand', cursive" },
-  indie:   { label: 'Indie Flower', family: "'Indie Flower', cursive" },
+  caveat:  { label: 'Caveat',       family: "var(--font-caveat), 'Caveat', cursive" },
+  kalam:   { label: 'Kalam',        family: "var(--font-kalam), 'Kalam', cursive" },
+  patrick: { label: 'Patrick Hand', family: "var(--font-patrick), 'Patrick Hand', cursive" },
+  indie:   { label: 'Indie Flower', family: "var(--font-indie), 'Indie Flower', cursive" },
 };
 
 export const SIZES = [14, 16, 18, 20, 24] as const;
