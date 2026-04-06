@@ -34,11 +34,6 @@ export default function PostItPreview({ postit, index }: Props) {
           lineHeight: '28px',
           paddingTop: '10px',
           paddingBottom: '14px',
-          backgroundImage: `repeating-linear-gradient(
-            transparent, transparent 27px,
-            rgba(105,31,49,0.08) 27px, rgba(105,31,49,0.08) 28px
-          )`,
-          backgroundPositionY: '6px',
         }}
       >
         {postit.texto}
