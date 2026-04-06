@@ -48,21 +48,7 @@ export const SIZES = [14, 16, 18, 20, 24] as const;
 export const ROTATIONS = ['-2deg', '1.5deg', '-1deg', '2deg', '-0.5deg'];
 
 export const TEMPLATES: Template[] = [
-  {
-    id: 'amor-1',
-    category: 'Amor',
-    emoji: '💌',
-    label: 'Amor',
-    texto: 'Você é especial pra mim.\nObrigado por existir na minha vida. ❤️',
-  },
-  {
-    id: 'amor-2',
-    category: 'Amor',
-    emoji: '💌',
-    label: 'Pega na minha mão',
-    texto: 'Pega na minha mão e vamos.\nJuntos a gente vai mais longe. 💕',
-  },
-  {
+{
     id: 'fofo-1',
     category: 'Fofura',
     emoji: '🐣',
