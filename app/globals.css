@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Google Fonts (para post-its + export area) ─── */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=DM+Sans:wght@400;500;700&family=Indie+Flower&family=Kalam:wght@300;400;700&family=Noto+Serif:wght@400;700&family=Patrick+Hand&display=swap');
+
+/* ─── Base ─── */
+body {
+  background: linear-gradient(135deg, #FFFFFD 0%, #f8f2ec 50%, #f0e6da 100%);
+  min-height: 100vh;
+}
+
+/* ─── Post-it Card (papel com linhas) ─── */
+.postit-card {
+  position: relative;
+  min-height: 210px;
+  border-radius: 3px;
+  padding: 28px 16px 14px;
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 23px,
+    rgba(105, 31, 49, 0.06) 23px,
+    rgba(105, 31, 49, 0.06) 24px
+  );
+  box-shadow:
+    3px 6px 20px rgba(105, 31, 49, 0.14),
+    1px 2px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.postit-card:hover {
+  box-shadow:
+    4px 8px 28px rgba(105, 31, 49, 0.2),
+    2px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* ─── Fita adesiva (tape) ─── */
+.tape {
+  width: 68px;
+  height: 20px;
+  border-radius: 2px;
+  margin-bottom: -10px;
+  z-index: 10;
+  position: relative;
+  opacity: 0.85;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* ─── Shadow para preview/export ─── */
+.shadow-postit {
+  box-shadow:
+    3px 6px 20px rgba(105, 31, 49, 0.18),
+    1px 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* ─── Export area (off-screen) ─── */
+.export-area {
+  position: fixed;
+  left: -9999px;
+  top: 0;
+  pointer-events: none;
+}
+
+/* ─── Animations ─── */
+.animate-in {
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Toast custom ─── */
+.toast-coigre {
+  font-family: 'Patrick Hand', cursive !important;
+  font-size: 16px !important;
+}
+
+/* ─── Scrollbar sutil ─── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(105, 31, 49, 0.15);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(105, 31, 49, 0.3);
+}
